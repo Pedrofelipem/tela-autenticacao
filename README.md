@@ -17,10 +17,9 @@ O projeto é referênte a um teste, onde desvolvi uma tela de autenticação, es
 # 🎨 Imagens
 
 <div>
-    <img src="./images/APP/login.png" alt="Login" height="400px">
-    <img src="./images/APP/cadastro.png" alt="Cadastro" height="400px">
-    <img src="./images/APP/home.png" alt="Home" height="400px">
-    <img src="./images/APP/detalhes-Campanha.png" alt="Detalhes campanha" height="400px">
+    <img src="./assets/print-01 (1).jpg" alt="Login" height="550px">
+    <img src="./assets/print-01 (2).jpg" alt="Cadastro" height="550px">
+    <img src="./assets/print-01 (3).jpg" alt="Home" height="550px">
 </div>
 
 <br/>
