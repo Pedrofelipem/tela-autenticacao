@@ -2,6 +2,7 @@ import * as React from "react";
 import { StatusBar, TouchableOpacity, Text } from "react-native";
 import {
   Container,
+  Mensagem,
   Logo,
   Conteudo,
   BemVindo,
@@ -15,15 +16,33 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 import { InputCampo, InputSenha } from "../../components/input";
 import { ButtonAcessar, TextButton } from "../../styles/styles-button";
+import { UsuariosProviders } from "../../providers/usuarios";
+import { MensagemLogin } from "../../models/MensagemLogin";
 
 export interface LoginScreenProps {}
 
 export function LoginScreen(props: LoginScreenProps) {
-  const logar = async (dados) => {};
+  const [mensagem, setMensagem] = React.useState<MensagemLogin>(null);
+
+  const logar = async (dados) => {
+    let resposta: MensagemLogin = await UsuariosProviders.Logar(
+      dados.email,
+      dados.senha
+    );
+
+    setMensagem(resposta);
+  };
 
   return (
     <Container>
       <StatusBar backgroundColor="#DCDCDC" />
+      {mensagem != null && (
+        <Mensagem
+          style={{ backgroundColor: mensagem.id == 100 ? "green" : "red" }}
+        >
+          {mensagem.mensagem}.
+        </Mensagem>
+      )}
       <Formik
         initialValues={{
           email: "",
