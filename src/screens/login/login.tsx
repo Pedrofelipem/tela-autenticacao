@@ -4,16 +4,17 @@ import {
   Container,
   Logo,
   Conteudo,
-  Bemvindo,
-  Recuperarsenha,
-  Textcriarconta,
-  Criarconta,
-  Containercriarconta,
-  ContainerForm,
+  BemVindo,
+  RecuperarSenha,
+  Errors,
+  TextCriarConta,
+  CriarConta,
+  ContainerCriarConta,
 } from "../../styles/styles-login";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import { InputCampo, InputSenha } from "../../components/input";
+import { ButtonAcessar, TextButton } from "../../styles/styles-button";
 
 export interface LoginScreenProps {}
 
@@ -30,7 +31,7 @@ export function LoginScreen(props: LoginScreenProps) {
         }}
         validationSchema={Yup.object().shape({
           email: Yup.string()
-            .required("Campo e-mail obrigatório")
+            .required("Campo email obrigatório")
             .email("Email inválido")
             .max(30, "Máximo 30 caracteres"),
           senha: Yup.string()
@@ -50,30 +51,33 @@ export function LoginScreen(props: LoginScreenProps) {
         }) => (
           <Conteudo>
             <Logo source={require("../../assets/image/logo.png")} />
-
-            <Bemvindo>BEM VINDO</Bemvindo>
+            <BemVindo>BEM VINDO</BemVindo>
             <InputCampo
               placeholder="Email"
               tipoTeclado="email-address"
               onChangeText={handleChange("email")}
               onBlur={() => handleBlur("email")}
             />
-            {touched.email && <Text>{errors.email}</Text>}
             <InputSenha
               placeholder="Senha"
               tipoTeclado="email-address"
               onChangeText={handleChange("senha")}
               onBlur={() => handleBlur("senha")}
             />
-            {touched.senha && <Text>{errors.senha}</Text>}
-
-            <Recuperarsenha>Recuperar senha</Recuperarsenha>
-            <Containercriarconta>
-              <Textcriarconta>Não tem conta?</Textcriarconta>
+            {touched.email && <Errors>{errors.email}</Errors>}
+            {touched.senha && <Errors>{errors.senha}</Errors>}
+            <TouchableOpacity>
+              <RecuperarSenha>Recuperar senha</RecuperarSenha>
+            </TouchableOpacity>
+            <ButtonAcessar onPress={() => handleSubmit()}>
+              <TextButton>ACESSAR</TextButton>
+            </ButtonAcessar>
+            <ContainerCriarConta>
+              <TextCriarConta>Não tem conta?</TextCriarConta>
               <TouchableOpacity>
-                <Criarconta>Crie uma nova agora</Criarconta>
+                <CriarConta>Crie uma nova agora</CriarConta>
               </TouchableOpacity>
-            </Containercriarconta>
+            </ContainerCriarConta>
           </Conteudo>
         )}
       </Formik>

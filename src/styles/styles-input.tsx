@@ -3,8 +3,8 @@ import styled from "styled-components/native";
 export const Inputemail = styled.TextInput`
   background-color: #dcdcdc;
   color: black;
-  width: 300px;
-  padding: 20px;
+  width: 320px;
+  padding: 18px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border: 15px;
@@ -15,8 +15,8 @@ export const Inputemail = styled.TextInput`
 export const Inputsenha = styled.TextInput`
   background-color: #dcdcdc;
   color: black;
-  width: 300px;
-  padding: 20px;
+  width: 320px;
+  padding: 18px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   border-width: 5px;
