@@ -44,7 +44,7 @@ Para acessar o app de forma fácil e rápida, basta seguir as instruções. Ser�
 
 ```bash
 $ instalar o expo.
-S escanear QRcode 
+$ escanear QRcode 
 
 Neste Link está o QRcode - https://expo.dev/@pedrof_m10/teste-jrm 
 ```
