@@ -56,7 +56,7 @@ Para conseguir executar o projeto seguir as instruções, será necessário inst
 <br/>
 
 ```bash
-$ git clone https://github.com/Pedrofelipem/teste-jr-mendonca.git
+$ git clone https://github.com/Pedrofelipem/tela-autenticacao.git
 
 $ cd teste-jr-mendonca
 
