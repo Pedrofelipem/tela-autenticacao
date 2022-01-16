@@ -43,7 +43,7 @@ O projeto é referente a um teste, onde desvolvi uma tela de autenticação, est
 Para acessar o app de forma fácil e rápida, basta seguir as instruções. Será necessário instalar o expo no seu android [EXPO](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR&gl=US).
 
 ```bash
-$ instalar o expo.
+$ instalar o expo
 $ escanear QRcode 
 
 Neste Link está o QRcode - https://expo.dev/@pedrof_m10/teste-jrm 
