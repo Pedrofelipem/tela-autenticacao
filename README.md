@@ -7,7 +7,7 @@ O projeto é referente a um teste, onde desvolvi uma tela de autenticação, est
 
 # 📁 Estrutura do projeto
 
-- Components : A pasta contém alguns componentes que são rederizados na tela principal.
+- Components : A pasta contém alguns componentes que são renderizados na tela principal.
 - Models: A pasta contém algumas tipagens, onde posso atribuir tipo na linguagem.
 - Navigations: A pasta contém a navegação principal.
 - Providers: A pasta contém alguns arquivos, que são responsaveis pelo consumo da API e gerenciamento.
