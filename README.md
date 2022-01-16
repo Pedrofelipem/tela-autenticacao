@@ -1,6 +1,6 @@
 # 📝 Sobre
 
-O projeto é referênte a um teste, onde desvolvi uma tela de autenticação, estilizei e consumi uma rota na API, para validar se o usuário existe ou não.
+O projeto é referente a um teste, onde desvolvi uma tela de autenticação, estilizei e consumi uma rota na API, para validar se o usuário existe ou não.
 </br>
 </br>
 
